@@ -228,7 +228,7 @@ npm start
 
 ## 🖼️ Dashboard Screenshots
 
-### Overview - Dashboard
+### Overview - Algorithms
 <img width="600" alt="SynthView Dashboard Overview" src="https://github.com/user-attachments/assets/18591f38-a59b-46a3-b1d3-8a9466f8c0ff" />
 
 ---
