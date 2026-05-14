@@ -1,0 +1,33 @@
+SYNTHVIEW PIPELINE FLOW
+
+Step 1: main.go
+        |
+        v
+Step 2: capture/pcap_reader.go
+        |  Reads PCAP file, extracts packets
+        v
+Step 3: flow/flow_table.go
+        |  Groups packets by 5-tuple (IPs, Ports, Protocol)
+        v
+Step 4: features/flow_features.go + stats.go
+        |  Extracts: Duration, Packet Rate, Byte Rate, IAT Variance, Burstiness
+        v
+Step 5: baseline/baseline.go + builder.go
+        |  Calculates MEAN of features for TCP and UDP separately
+        v
+Step 6: fidelity/fidelity.go
+        |  Score = 100 x e^(-distance)
+        v
+Step 7: fingerprint/fingerprint.go
+        |  Labels: DNS-like, HTTP-like, Anomalous
+        v
+Step 8: metrics/metrics.go
+        |  Aggregates: Total Flows, Avg Fidelity, Low Fidelity
+        v
+Step 9: api/server.go
+        |  REST API at port 8080, sends JSON
+        v
+Step 10: React Dashboard (App.js)
+        |  Displays cards, pie chart, bar chart
+        v
+OUTPUT: Fidelity Score 0 to 100 + Traffic Labels
