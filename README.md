@@ -226,6 +226,23 @@ npm start
 
 ---
 
+## 🖼️ Dashboard Screenshots
+
+### Overview - Dashboard
+<img width="600" alt="SynthView Dashboard Overview" src="https://github.com/user-attachments/assets/18591f38-a59b-46a3-b1d3-8a9466f8c0ff" />
+
+---
+
+### Charts - Pie & Bar Visualization
+<img width="600" alt="SynthView Charts View" src="https://github.com/user-attachments/assets/19e60e80-2d7b-48e4-b1fd-e76d9d035403" />
+
+---
+
+### About
+<img width="600" alt="SynthView Anomaly Alerts" src="https://github.com/user-attachments/assets/ec635457-d495-42b0-ad5a-128a088dd1b7" />
+
+---
+
 ## ⚠️ Troubleshooting
 
 | Problem | Solution |
